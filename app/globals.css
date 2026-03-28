@@ -256,6 +256,29 @@ button {
   opacity: 1;
 }
 
+footer h4 {
+  color: var(--accent);
+}
+
+.footer-bz-brand {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.footer-bz-brand span {
+  color: var(--accent);
+}
+
+.footer-nav-link {
+  color: var(--text);
+}
+
+.footer-nav-link:hover {
+  color: var(--muted);
+  opacity: 0.88;
+}
+
 .btn-primary {
   background: var(--color-primary);
   color: var(--bg);
