@@ -5,7 +5,11 @@ const Header = () => {
   return (
     <header className='bz-header flex items-center'>
       <div className='container flex justify-between items-center'>
-        <Link href={'/'} aria-label='Book Zambales - Home' className='bz-logo'>
+        <Link
+          href={'/'}
+          aria-label='Book Zambales - Home'
+          className='bz-brand-logo'
+        >
           Book<span className='text-(--color-primary)'>Zambales</span>
         </Link>
         <nav aria-label='Main navigation'>
