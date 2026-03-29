@@ -124,6 +124,8 @@ body {
   transition:
     background-color var(--transition-base),
     color var(--transition-base);
+  display: grid;
+  grid-template-rows: 60px 1fr 333px;
 }
 
 h1,
@@ -247,13 +249,8 @@ button {
   height: 60px;
 }
 
-.text-nav {
-  color: var(--muted);
-}
-
-.text-nav:hover {
-  color: var(--text);
-  opacity: 1;
+.bz-footer {
+  border-top: 1px solid var(--border);
 }
 
 footer h4 {
@@ -261,7 +258,7 @@ footer h4 {
 }
 
 .footer-bz-brand {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: var(--font-display);
   font-weight: 600;
 }
@@ -270,10 +267,11 @@ footer h4 {
   color: var(--accent);
 }
 
+.text-nav,
 .footer-nav-link {
   color: var(--text);
 }
-
+.text-nav:hover,
 .footer-nav-link:hover {
   color: var(--muted);
   opacity: 0.88;

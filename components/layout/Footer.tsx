@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className='bz-footer'>
-      <div className='container grid grid-cols-5 gap-4'>
+      <div className='container grid grid-cols-5 gap-4 py-8'>
         <div className='brand col-span-2'>
           <div className='footer-bz-brand'>
             Book<span>Zambales</span>
@@ -47,6 +47,11 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+      </div>
+      <div className='border-t border-(--border) py-4'>
+        <p className='copyright text-center'>
+          © {new Date().getFullYear()} BookZambales. Built for Zambales 🌊
+        </p>
       </div>
     </footer>
   );
