@@ -1,6 +1,3 @@
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
-
 export const metadata = {
   title: 'Home',
 };
@@ -8,9 +5,8 @@ export const metadata = {
 const Page = () => {
   return (
     <>
-      <Header />
-      <main></main>
-      <Footer />
+      <section>Hero</section>
+      <section>Features</section>
     </>
   );
 };
