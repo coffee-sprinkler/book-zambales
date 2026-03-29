@@ -125,7 +125,7 @@ body {
     background-color var(--transition-base),
     color var(--transition-base);
   display: grid;
-  grid-template-rows: 60px 1fr 333px;
+  grid-template-rows: 60px 1fr 326px;
 }
 
 h1,
@@ -267,6 +267,10 @@ footer h4 {
   color: var(--accent);
 }
 
+.footer-bz-tagline {
+  font-size: 0.875rem;
+}
+
 .text-nav,
 .footer-nav-link {
   color: var(--text);
@@ -275,6 +279,10 @@ footer h4 {
 .footer-nav-link:hover {
   color: var(--muted);
   opacity: 0.88;
+}
+
+.footer-nav-link {
+  font-size: 0.875rem;
 }
 
 .btn-primary {
