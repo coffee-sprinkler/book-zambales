@@ -1,3 +1,5 @@
+import Hero from '@/components/home/Hero';
+
 export const metadata = {
   title: 'Home',
 };
@@ -5,7 +7,7 @@ export const metadata = {
 const Page = () => {
   return (
     <>
-      <section>Hero</section>
+      <Hero />
       <section>Features</section>
     </>
   );

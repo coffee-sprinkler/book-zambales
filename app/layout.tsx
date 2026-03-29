@@ -1,16 +1,20 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/providers/Theme';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+import { Playfair_Display, DM_Sans } from 'next/font/google';
+
+const playfair = Playfair_Display({
   subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-display',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const dmSans = DM_Sans({
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  variable: '--font-body',
 });
 
 export const metadata: Metadata = {
@@ -49,7 +53,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${playfair.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className='min-h-full'>
