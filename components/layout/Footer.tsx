@@ -1,13 +1,22 @@
 import { CATEGORY_NAV } from '@/constants/categories';
 import { MUNICIPALITY_LABELS } from '@/constants/municipalities';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '@/public/logo.png';
 
 const Footer = () => {
   return (
     <footer className='bz-footer'>
       <div className='container grid grid-cols-5 gap-4 py-8'>
         <div className='brand col-span-2'>
-          <div className='footer-bz-brand'>
+          <div className='footer-bz-brand flex items-center mb-4'>
+            <Image
+              src={Logo}
+              alt='book zambales logo'
+              width={32}
+              height={32}
+              className='me-1'
+            />
             Book<span>Zambales</span>
           </div>
           <p className='footer-bz-tagline w-3/4'>
@@ -16,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
         <div className='explore'>
-          <h4>Explore</h4>
+          <h4 className='mb-4'>Explore</h4>
           <ul>
             <li>
               <Link href={'/listings'} className='footer-nav-link'>
@@ -33,7 +42,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className='locations col-span-2'>
-          <h4>Locations</h4>
+          <h4 className='mb-4'>Locations</h4>
           <ul className='grid grid-cols-2'>
             {Object.entries(MUNICIPALITY_LABELS).map(([key, label]) => (
               <li key={key}>

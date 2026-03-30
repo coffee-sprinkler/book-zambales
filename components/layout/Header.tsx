@@ -1,5 +1,7 @@
 import { CATEGORY_NAV } from '@/constants/categories';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '@/public/logo.png';
 
 const Header = () => {
   return (
@@ -8,8 +10,15 @@ const Header = () => {
         <Link
           href={'/'}
           aria-label='Book Zambales - Home'
-          className='bz-brand-logo'
+          className='bz-brand-logo flex items-center'
         >
+          <Image
+            src={Logo}
+            alt='book zambales logo'
+            width={32}
+            height={32}
+            className='me-1'
+          />
           Book<span className='text-(--color-primary)'>Zambales</span>
         </Link>
         <nav aria-label='Main navigation'>

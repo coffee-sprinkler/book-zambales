@@ -135,7 +135,7 @@ body {
     background-color var(--transition-base),
     color var(--transition-base);
   display: grid;
-  grid-template-rows: 60px 1fr 326px;
+  grid-template-rows: 60px 1fr 342px;
 }
 
 h1,
