@@ -12,7 +12,6 @@ export const MUNICIPALITIES = {
   SANTA_CRUZ: 'santa_cruz',
   MASINLOC: 'masinloc',
   CANDELARIA: 'candelaria',
-  ZAMBALES: 'zambales', // for "all of zambales" filter
 } as const;
 
 export type Municipality = (typeof MUNICIPALITIES)[keyof typeof MUNICIPALITIES];
@@ -24,12 +23,12 @@ export function isValidMunicipality(value: string): value is Municipality {
 }
 
 export const MUNICIPALITY_LABELS: Record<Municipality, string> = {
+  iba: 'Iba (Capital)',
   olongapo: 'Olongapo City',
   subic: 'Subic',
   san_antonio: 'San Antonio',
   san_narciso: 'San Narciso',
   san_felipe: 'San Felipe',
-  iba: 'Iba',
   palauig: 'Palauig',
   cabangan: 'Cabangan',
   botolan: 'Botolan',
@@ -37,5 +36,4 @@ export const MUNICIPALITY_LABELS: Record<Municipality, string> = {
   santa_cruz: 'Santa Cruz',
   masinloc: 'Masinloc',
   candelaria: 'Candelaria',
-  zambales: 'All of Zambales',
 };

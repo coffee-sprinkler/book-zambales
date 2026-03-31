@@ -8,7 +8,6 @@ const Page = () => {
   return (
     <>
       <Hero />
-      <section>Features</section>
     </>
   );
 };

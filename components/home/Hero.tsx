@@ -1,11 +1,12 @@
 import { Home, Search } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Search as SearchComponent } from '@/components/home/Search';
 import Hero_Illustration from '@/public/zambales.png';
 
 const Hero = () => {
   return (
-    <section className='hero relative min-h-[88vh] flex items-center border-b border-(--bg)'>
+    <section className='hero relative min-h-[88vh] flex flex-col justify-center border-b border-(--bg)'>
       <div className='hero-bg'></div>
       <div className='hero-grid-overlay'></div>
       <div className='container flex gap-2 items-center relative z-2'>
@@ -34,6 +35,9 @@ const Hero = () => {
             alt='book zambales hero illustration'
           />
         </div>
+      </div>
+      <div className='container z-2'>
+        <SearchComponent />
       </div>
     </section>
   );

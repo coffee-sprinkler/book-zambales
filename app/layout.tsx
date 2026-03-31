@@ -2,7 +2,10 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/providers/Theme';
 
-import { Playfair_Display, DM_Sans } from 'next/font/google';
+import { Playfair_Display, DM_Sans, Inter } from 'next/font/google';
+import { cn } from '@/lib/utils';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -53,7 +56,14 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${dmSans.variable} ${playfair.variable} h-full antialiased`}
+      className={cn(
+        'h-full',
+        'antialiased',
+        dmSans.variable,
+        playfair.variable,
+        'font-sans',
+        inter.variable,
+      )}
       suppressHydrationWarning
     >
       <body className='min-h-full'>
