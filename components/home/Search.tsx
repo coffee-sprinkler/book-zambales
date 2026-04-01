@@ -3,7 +3,7 @@ import { CATEGORY_LABELS } from '@/constants/categories';
 
 const Search = () => {
   return (
-    <div className='search-container bg-(--surface) border border-(--border) rounded-[14px] p-4 max-w-225 mx-auto mt-28'>
+    <div className='bg-(--surface) border border-(--border) rounded-[14px] p-4 max-w-150 mx-auto mt-28'>
       <div className='search-card grid grid-cols-3 gap-8 items-center'>
         <div className='location flex flex-col gap-2'>
           <label
